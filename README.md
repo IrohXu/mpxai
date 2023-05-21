@@ -1,11 +1,14 @@
 # mpxai
-MPX AI models
+
+### Tony Li-Geng, Xu Cao, Wenqian Ye
+
+MPX AI models. 
 
 ### Install in HPC    
 
 #### launch the GPU   
 ```
-srun --partition=gpu4_dev --nodes=1 --ntasks=1 --cpus-per-task=1 --gres=gpu:1 --mem-per-cpu=16G --pty bash
+srun --partition=gpu4_dev --nodes=1 --ntasks=1 --cpus-per-task=1 --gres=gpu:1 --mem-per-cpu=16G --pty bash    
 ```
 
 #### Load three module    
@@ -20,14 +23,14 @@ module load condaenvs/gpu/pytorch_lightning
 pip install -r requirements.txt
 ```
 
-### The first stage training    
+### The first stage training (public dataset)     
 
 ```
 python pretrain.py --dataset_path /gpfs/home/xc2057/monkeypox/nyu_monkeypox_dataset
 ```
 
 
-### The second stage training     
+### The second stage training (public dataset)     
 ```
 python finetune.py --pretrained_model_path ./ce_pretrained_model.pth --dataset_path /gpfs/home/xc2057/monkeypox/nyu_monkeypox_dataset
 ```
