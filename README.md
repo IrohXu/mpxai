@@ -2,7 +2,21 @@
 
 ### Tony Li-Geng, Xu Cao, Wenqian Ye
 
-MPX AI models. 
+MPX AI models.   
+
+### Git clone or update the code   
+
+If you did not download (git clone) it:   
+
+```
+git clone git@github.com:IrohXu/mpxai.git
+```
+
+else, go the folder and:   
+
+```
+git pull
+```
 
 ### Install in HPC    
 
