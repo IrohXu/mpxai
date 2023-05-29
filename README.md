@@ -9,7 +9,7 @@ MPX AI models.
 If you did not download (git clone) it:   
 
 ```
-git clone git@github.com:IrohXu/mpxai.git
+git clone https://github.com/IrohXu/mpxai.git
 ```
 
 else, go the folder and:   
